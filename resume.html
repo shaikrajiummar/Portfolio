@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Rajiummar | Curriculum Vitae</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --bg-body: #f8fafc;
+            --bg-paper: #ffffff;
+            --border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.5;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--bg-paper);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            padding: 50px;
+            position: relative;
+        }
+
+        /* Toolbar */
+        .toolbar {
+            max-width: 900px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toolbar-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-back {
+            background-color: transparent;
+            color: var(--text-muted);
+            border: 1px solid var(--border);
+        }
+
+        .btn-back:hover {
+            background-color: var(--border);
+            color: var(--text-main);
+        }
+
+        .btn-print {
+            background-color: var(--primary);
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+        }
+
+        .btn-print:hover {
+            background-color: #0369a1;
+            transform: translateY(-1px);
+        }
+
+        /* Resume Content Styling */
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 24px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .contact-info a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            color: var(--primary);
+        }
+
+        .resume-body {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        .left-col {
+            border-right: 1px solid var(--border);
+            padding-right: 30px;
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--primary);
+            margin-bottom: 16px;
+            border-left: 3px solid var(--primary);
+            padding-left: 8px;
+            line-height: 1.1;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Details list */
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 16px;
+        }
+
+        .info-list li:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            margin-bottom: 2px;
+            display: block;
+        }
+
+        .info-value {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* Skills block */
+        .skill-tag-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .skill-tag-label {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .skill-tags {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        /* Timeline blocks */
+        .edu-item {
+            margin-bottom: 20px;
+        }
+
+        .edu-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .edu-date {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .edu-degree {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .edu-institution {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .edu-score {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-top: 2px;
+        }
+
+        /* Summary & Projects */
+        .summary-text {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            text-align: justify;
+        }
+
+        .project-item {
+            margin-bottom: 24px;
+        }
+
+        .project-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+
+        .project-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .project-tech {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--primary);
+            text-transform: uppercase;
+        }
+
+        .project-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+        }
+
+        .project-bullets {
+            margin-left: 16px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .project-bullets li {
+            margin-bottom: 4px;
+        }
+
+        /* Certifications */
+        .cert-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        .cert-item {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .cert-item i {
+            color: var(--primary);
+            margin-top: 3px;
+        }
+
+        .cert-item span {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Leadership */
+        .lead-item {
+            margin-bottom: 16px;
+        }
+
+        .lead-title-bar {
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .lead-org {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .lead-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Honors */
+        .honor-item {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .honor-item strong {
+            color: var(--text-main);
+        }
+
+        /* Print overrides */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+                color: #000000;
+            }
+
+            .resume-container {
+                border: none;
+                box-shadow: none;
+                padding: 0;
+                border-radius: 0;
+            }
+
+            .no-print {
+                display: none !important;
+            }
+
+            .left-col {
+                border-right: 1px solid #cbd5e1;
+            }
+        }
+
+        /* Small screen responsive override */
+        @media (max-width: 768px) {
+            .resume-body {
+                grid-template-columns: 1fr;
+            }
+
+            .left-col {
+                border-right: none;
+                padding-right: 0;
+            }
+
+            body {
+                padding: 20px 10px;
+            }
+
+            .resume-container {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Toolbar (Hidden during print) -->
+    <div class="toolbar no-print">
+        <a href="index.html" class="toolbar-btn btn-back">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+        <button onclick="window.print()" class="toolbar-btn btn-print">
+            <i class="fas fa-file-pdf"></i> Save / Print PDF
+        </button>
+    </div>
+
+    <!-- Printable Resume Paper -->
+    <div class="resume-container">
+        <header>
+            <h1>SHAIK RAJIUMMAR</h1>
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Hyderabad, India</span>
+                <span><i class="fas fa-phone"></i> <a href="tel:+919398666507">+91 9398666507</a></span>
+                <span><i class="fas fa-envelope"></i> <a href="mailto:shaik.rajiummar.shaik@gmail.com">shaik.rajiummar.shaik@gmail.com</a></span>
+                <span><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/shaik-rajiummar" target="_blank">linkedin.com/in/shaik-rajiummar</a></span>
+                <span><i class="fab fa-github"></i> <a href="https://github.com/shaikrajiummar" target="_blank">github.com/shaikrajiummar</a></span>
+            </div>
+        </header>
+
+        <div class="resume-body">
+            <!-- Left Column: Core metadata -->
+            <div class="left-col">
+                <!-- Education -->
+                <section>
+                    <h2 class="section-title">Education</h2>
+                    
+                    <div class="edu-item">
+                        <span class="edu-date">2022 - Present</span>
+                        <div class="edu-degree">B.Tech in Computer Science</div>
+                        <div class="edu-institution">Malla Reddy University</div>
+                        <div class="edu-score">Grade: 8.74 CGPA</div>
+                    </div>
+
+                    <div class="edu-item">
+                        <span class="edu-date">2020 - 2022</span>
+                        <div class="edu-degree">Intermediate (Class XII)</div>
+                        <div class="edu-institution">Sri Chaitanya College</div>
+                        <div class="edu-score">Score: 85.7% (MPC)</div>
+                    </div>
+
+                    <div class="edu-item">
+                        <span class="edu-date">2020</span>
+                        <div class="edu-degree">Secondary School (Class X)</div>
+                        <div class="edu-institution">Madhu Vidyalayam</div>
+                        <div class="edu-score">Score: 95.0%</div>
+                    </div>
+                </section>
+
+                <!-- Core Skills -->
+                <section>
+                    <h2 class="section-title">Core Skills</h2>
+                    <div class="skill-tag-group">
+                        <div class="skill-tag-label">Languages</div>
+                        <div class="skill-tags">Python, Java, JavaScript (ES6+)</div>
+                        
+                        <div class="skill-tag-label">Frontend</div>
+                        <div class="skill-tags">React.js, HTML5, CSS3, Bootstrap</div>
+
+                        <div class="skill-tag-label">Backend & DB</div>
+                        <div class="skill-tags">Node.js, Express.js, SQL, MongoDB</div>
+
+                        <div class="skill-tag-label">Tools & Versioning</div>
+                        <div class="skill-tags">Git, GitHub, VS Code</div>
+
+                        <div class="skill-tag-label">Other</div>
+                        <div class="skill-tags">Salesforce Application Dev</div>
+                    </div>
+                </section>
+
+                <!-- Certifications -->
+                <section>
+                    <h2 class="section-title">Certifications</h2>
+                    <ul class="cert-list">
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> <span>Python Intro</span> - Penn Univ</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> <span>Prog. Essentials</span> - Rice Univ</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> <span>AI Foundations</span> - IBM</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> <span>Data Analytics</span> - Deloitte</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> <span>Java Intro</span> - HP Life</li>
+                        <li class="cert-item"><i class="fas fa-check-circle"></i> <span>Data Science</span> - Coursera</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- Right Column: Professional content -->
+            <div class="right-col">
+                <!-- Objective -->
+                <section>
+                    <h2 class="section-title">Professional Summary</h2>
+                    <p class="summary-text">
+                        Result-driven Computer Science Engineering undergraduate with hands-on experience in building scalable full-stack web applications, database management, and object-oriented software design. Proficient in Java, Python, JavaScript, and JS frameworks (React.js, Node.js, Express.js), with a strong foundation in database design (SQL, MongoDB) and Salesforce application development. Proven record of developing secure role-based portals and sports analytics web scrapers. Recognized as a quick learner and analytical problem solver, seeking an entry-level Software Engineer role to leverage technical skills in delivering impactful digital products.
+                    </p>
+                </section>
+
+                <!-- Academic Projects -->
+                <section>
+                    <h2 class="section-title">Academic Projects</h2>
+                    
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3 class="project-name">Blood Donor Web Application</h3>
+                            <span class="project-tech">React, Node, Express, MongoDB</span>
+                        </div>
+                        <p class="project-desc">A scalable, secure MERN stack web portal streamlining blood bank requests and donor connections.</p>
+                        <ul class="project-bullets">
+                            <li>Implemented JWT-based role authorization for Donors, Hospitals, and Admins.</li>
+                            <li>Designed a dynamic real-time inventory management dashboard tracking available blood units.</li>
+                            <li>Sanitized inputs and database query filters to protect user profile data.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3 class="project-name">Student ERP System</h3>
+                            <span class="project-tech">Java, JDBC, MySQL, JS</span>
+                        </div>
+                        <p class="project-desc">A centralized enterprise dashboard management system for academic records and timetable allocation.</p>
+                        <ul class="project-bullets">
+                            <li>Orchestrated secure database transactions with JDBC CRUD APIs.</li>
+                            <li>Engineered automated attendance tracking progress metrics and responsive class calendars.</li>
+                            <li>Developed encryption-based password hashing verification protocols.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3 class="project-name">CricSta Cricket Stats Web App</h3>
+                            <span class="project-tech">Python, BS4, HTML, CSS, JS</span>
+                        </div>
+                        <p class="project-desc">A data analytics portal scraping and comparing live cricket statistics and player parameters.</p>
+                        <ul class="project-bullets">
+                            <li>Designed web crawlers utilizing BeautifulSoup to scrape ODI player profiles and commentaries.</li>
+                            <li>Created interactive batting average and strike rate comparison data charts.</li>
+                            <li>Optimized assets delivery to decrease page load times.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3 class="project-name">Jackie Jeans Onboarding</h3>
+                            <span class="project-tech">React, Tailwind, Web Speech API</span>
+                        </div>
+                        <p class="project-desc">A premium mobile-first fit quiz and hands-free voice onboarding assistant app.</p>
+                        <ul class="project-bullets">
+                            <li>Developed a multi-step animated fit quiz calculating garment sizes.</li>
+                            <li>Integrated Speech Recognition and Synthesis API for voice assistant support.</li>
+                            <li>Engineered personalized recommendation grids and dynamic web transitions.</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-item">
+                        <div class="project-header">
+                            <h3 class="project-name">IndusMind AI Platform</h3>
+                            <span class="project-tech">React, Vite, D3.js, NLP/RAG</span>
+                        </div>
+                        <p class="project-desc">An enterprise operations dashboard incorporating OCR document search and interactive knowledge graphs.</p>
+                        <ul class="project-bullets">
+                            <li>Created RAG chatbot retrieving technical PDF manuals with source citation lists.</li>
+                            <li>Mapped interactive D3 database logs as dynamic graph nodes.</li>
+                            <li>Programmed automated telemetry check triggers for machinery maintenance.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Leadership & Volunteers -->
+                <section>
+                    <h2 class="section-title">Leadership & Extra-Curriculars</h2>
+                    
+                    <div class="lead-item">
+                        <div class="lead-title-bar">Student Ambassador</div>
+                        <div class="lead-org">LetsUpgrade EdTech Pvt. Ltd.</div>
+                        <p class="lead-desc">Pioneered local campus programming outreach campaigns to registers students in coding courses, driving digital learning inclusion.</p>
+                    </div>
+
+                    <div class="lead-item">
+                        <div class="lead-title-bar">Blood Donation Volunteer</div>
+                        <div class="lead-org">Campus Health Drives</div>
+                        <p class="lead-desc">Assisted in coordinating blood mobilization drives, managing registrations, and promoting community health initiatives.</p>
+                    </div>
+                </section>
+
+                <!-- Honors & Achievements -->
+                <section>
+                    <h2 class="section-title">Honors & Achievements</h2>
+                    <div class="honor-item">
+                        <i class="fas fa-medal"></i> <strong>VBYLD 2026 Stage III Finalist:</strong> Qualified for Stage III State-Level Championship conducted by the Ministry of Youth Affairs & Sports (Govt of India).
+                    </div>
+                    <div class="honor-item">
+                        <i class="fas fa-trophy"></i> <strong>eSports Winner:</strong> Secured top ranks in inter-college gaming competitions, proving strategic teamwork and fast decision-making.
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

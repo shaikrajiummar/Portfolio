@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Rajiummar | Premium Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Shaik Rajiummar - Full Stack Developer & Software Enthusiast. Exploring B.Tech in CSE, featuring interactive projects, technical expertise, and credentials.">
+    <!-- Google Fonts: Outfit -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-theme">
+    <!-- Navigation Bar -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo-link">SR<span>.</span></a>
+            <nav class="nav-menu" id="navigation-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="nav-actions">
+                <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle dark/light theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-menu-overlay">
+        <button id="mobile-menu-close" class="mobile-menu-close" aria-label="Close menu">&times;</button>
+        <div class="mobile-nav-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge reveal-item">
+                    <span class="pulse-dot"></span> Available for Opportunities
+                </div>
+                <h1 class="hero-title reveal-item">
+                    Hi, I'm <span class="gradient-text">Shaik Rajiummar</span>
+                </h1>
+                <h2 class="hero-subtitle reveal-item">
+                    Full Stack Developer & Software Enthusiast
+                </h2>
+                <p class="hero-description reveal-item">
+                    Computer Science Engineering undergraduate with expertise in Java, Python, JavaScript, React.js, SQL, and Salesforce. Passionate about building robust full-stack platforms, solving complex algorithmic problems, and translating ideas into clean digital solutions.
+                </p>
+                <div class="hero-buttons reveal-item">
+                    <a href="#projects" class="btn btn-primary" id="view-projects-btn">
+                        <span>Explore My Work</span> <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="resume.html" target="_blank" class="btn btn-secondary" id="resume-download-btn">
+                        <span>Download Resume</span> <i class="fas fa-download"></i>
+                    </a>
+                </div>
+                <div class="social-links reveal-item">
+                    <a href="https://www.linkedin.com/in/shaik-rajiummar/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:shaik.rajiummar.shaik@gmail.com" class="social-link" aria-label="Send Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+919398666507" class="social-link" aria-label="Call Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal-item">
+                <div class="profile-card">
+                    <div class="profile-image-container">
+                        <img src="assets/developer_photo.jpg" alt="Shaik Rajiummar Profile Image" class="profile-img">
+                        <div class="floating-badge badge-top-left" id="badge-experience">
+                            <span class="badge-num">5+</span>
+                            <span class="badge-txt">Projects Completed</span>
+                        </div>
+                        <div class="floating-badge badge-bottom-right" id="badge-score">
+                            <span class="badge-num">8.74</span>
+                            <span class="badge-txt">B.Tech CGPA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-hint">
+            <a href="#about" aria-label="Scroll to About Section">
+                <span class="mouse-wheel"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About & Stats Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">About Me</span>
+                <h2 class="section-title">Bridging Theory & Practical Engineering</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text-card card reveal-item">
+                    <p class="about-para">
+                        I am a focused Computer Science Engineering student currently pursuing my Bachelor's degree at Malla Reddy University. My core passion lies in software engineering, full-stack systems, and using data-driven logic to solve real-world problems.
+                    </p>
+                    <p class="about-para">
+                        With solid foundations in core object-oriented languages like Java and Python, combined with modern frontend technologies, I build applications that prioritize performance, user experience, and scalability. I value structured software patterns, Git workflows, and clean code principles.
+                    </p>
+                    <p class="about-para">
+                        Beyond coding, I'm a quick learner and a natural collaborator, seeking an entry-level software engineering or developer role where I can contribute to business success while accelerating my technical growth.
+                    </p>
+                </div>
+                <div class="stats-panel">
+                    <div class="stat-item card reveal-item">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-value">5+</div>
+                        <div class="stat-label">Production-ready Projects</div>
+                    </div>
+                    <div class="stat-item card reveal-item">
+                        <div class="stat-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="stat-value">8.74</div>
+                        <div class="stat-label">Cumulative B.Tech CGPA</div>
+                    </div>
+                    <div class="stat-item card reveal-item">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="stat-value">6+</div>
+                        <div class="stat-label">Global Certifications</div>
+                    </div>
+                    <div class="stat-item card reveal-item">
+                        <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+                        <div class="stat-value">2026</div>
+                        <div class="stat-label">Graduation Year</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Academic Journey</span>
+                <h2 class="section-title">Education & Credentials</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"><i class="fas fa-university"></i></div>
+                    </div>
+                    <div class="timeline-card card">
+                        <span class="timeline-date">2022 - Present</span>
+                        <h3 class="timeline-title">Bachelor of Technology (B.Tech)</h3>
+                        <h4 class="timeline-subtitle">Computer Science Engineering</h4>
+                        <p class="timeline-institution">Malla Reddy University, Hyderabad</p>
+                        <div class="timeline-score-badge">
+                            <span class="score-label">Current Grade:</span>
+                            <span class="score-val">8.74 CGPA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                    </div>
+                    <div class="timeline-card card">
+                        <span class="timeline-date">2020 - 2022</span>
+                        <h3 class="timeline-title">Intermediate Education (Class XII)</h3>
+                        <h4 class="timeline-subtitle">MPC Stream (Maths, Physics, Chemistry)</h4>
+                        <p class="timeline-institution">Sri Chaitanya Junior College, Khammam</p>
+                        <div class="timeline-score-badge">
+                            <span class="score-label">Final Score:</span>
+                            <span class="score-val">85.7%</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"><i class="fas fa-book"></i></div>
+                    </div>
+                    <div class="timeline-card card">
+                        <span class="timeline-date">2020</span>
+                        <h3 class="timeline-title">Secondary School Certificate (Class X)</h3>
+                        <h4 class="timeline-subtitle">General Curriculum</h4>
+                        <p class="timeline-institution">Madhu Vidyalayam</p>
+                        <div class="timeline-score-badge">
+                            <span class="score-label">Final Score:</span>
+                            <span class="score-val">95.0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">My Stack</span>
+                <h2 class="section-title">Technical Competence</h2>
+            </div>
+            
+            <!-- Skill Category Filters -->
+            <div class="skills-filter-container reveal-item">
+                <button class="filter-btn active" data-filter="all">All Skills</button>
+                <button class="filter-btn" data-filter="languages">Programming</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="frameworks">JS Frameworks</button>
+                <button class="filter-btn" data-filter="database">Databases</button>
+                <button class="filter-btn" data-filter="tools">Dev Tools</button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-grid reveal-item">
+                <!-- Python -->
+                <div class="skill-card-wrapper" data-category="languages">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-python"></i></div>
+                        <h3 class="skill-name">Python</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 85%;"></span></div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <!-- Java -->
+                <div class="skill-card-wrapper" data-category="languages">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-java"></i></div>
+                        <h3 class="skill-name">Java</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 80%;"></span></div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <!-- HTML5 -->
+                <div class="skill-card-wrapper" data-category="frontend">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-html5"></i></div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 90%;"></span></div>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                </div>
+                <!-- CSS3 -->
+                <div class="skill-card-wrapper" data-category="frontend">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-css3-alt"></i></div>
+                        <h3 class="skill-name">CSS3</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 85%;"></span></div>
+                        <span class="skill-level">Expert</span>
+                    </div>
+                </div>
+                <!-- JavaScript -->
+                <div class="skill-card-wrapper" data-category="frontend languages">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-js"></i></div>
+                        <h3 class="skill-name">JavaScript</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 85%;"></span></div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <!-- React.js -->
+                <div class="skill-card-wrapper" data-category="frameworks">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-react"></i></div>
+                        <h3 class="skill-name">React.js</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 80%;"></span></div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <!-- Node.js -->
+                <div class="skill-card-wrapper" data-category="frameworks">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-node-js"></i></div>
+                        <h3 class="skill-name">Node.js</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 75%;"></span></div>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+                <!-- SQL -->
+                <div class="skill-card-wrapper" data-category="database">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fas fa-database"></i></div>
+                        <h3 class="skill-name">SQL</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 80%;"></span></div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <!-- MongoDB -->
+                <div class="skill-card-wrapper" data-category="database">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fas fa-leaf"></i></div>
+                        <h3 class="skill-name">MongoDB</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 70%;"></span></div>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+                <!-- Git & Version Control -->
+                <div class="skill-card-wrapper" data-category="tools">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-git-alt"></i></div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 85%;"></span></div>
+                        <span class="skill-level">Advanced</span>
+                    </div>
+                </div>
+                <!-- Salesforce -->
+                <div class="skill-card-wrapper" data-category="tools">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fab fa-salesforce"></i></div>
+                        <h3 class="skill-name">Salesforce Dev</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 65%;"></span></div>
+                        <span class="skill-level">Intermediate</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skill-card-wrapper" data-category="tools">
+                    <div class="skill-card card">
+                        <div class="skill-icon-box"><i class="fas fa-brain"></i></div>
+                        <h3 class="skill-name">Problem Solving</h3>
+                        <div class="skill-progress-bar"><span class="progress-fill" style="width: 90%;"></span></div>
+                        <span class="skill-level">Excellent</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">My Works</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Blood Donor -->
+                <article class="project-card card reveal-item" id="project-blooddonor">
+                    <div class="project-media">
+                        <img src="assets/blood_donor_mockup.png" alt="Blood Donor App Dashboard Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-category">Full Stack MERN</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Blood Donor Web Application</h3>
+                        <p class="project-summary">
+                            A secure, role-based platform designed to bridge communication gaps between blood donors, hospitals, and blood banks.
+                        </p>
+                        <div class="project-tags">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>Express.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="project-ctas">
+                            <button class="btn-project-detail btn btn-sm btn-outline" data-project="blooddonor">View Details</button>
+                            <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-link" aria-label="GitHub Repository"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: Student ERP -->
+                <article class="project-card card reveal-item" id="project-erp">
+                    <div class="project-media">
+                        <img src="assets/student_erp_mockup.png" alt="Student ERP System Timetable Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-category">Java Web Application</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Student ERP System</h3>
+                        <p class="project-summary">
+                            A centralized platform consolidating academic schedules, attendance tracking, secure logins, and timetable management.
+                        </p>
+                        <div class="project-tags">
+                            <span>Java</span>
+                            <span>JDBC</span>
+                            <span>MySQL</span>
+                            <span>HTML/CSS</span>
+                        </div>
+                        <div class="project-ctas">
+                            <button class="btn-project-detail btn btn-sm btn-outline" data-project="erp">View Details</button>
+                            <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-link" aria-label="GitHub Repository"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: CricSta -->
+                <article class="project-card card reveal-item" id="project-cricsta">
+                    <div class="project-media">
+                        <img src="assets/cricket_stats_mockup.png" alt="CricSta Cricket Statistics Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-category">Data-driven Web App</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CricSta - Cricket Stats Web App</h3>
+                        <p class="project-summary">
+                            A python-integrated analytics portal displaying real-time match scores, ODI statistics, and tournament summaries.
+                        </p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>JavaScript</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="project-ctas">
+                            <button class="btn-project-detail btn btn-sm btn-outline" data-project="cricsta">View Details</button>
+                            <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-link" aria-label="GitHub Repository"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Jackie Jeans Onboarding -->
+                <article class="project-card card reveal-item" id="project-jackiejeans">
+                    <div class="project-media">
+                        <img src="assets/jackie_jeans_mockup.png" alt="Jackie Jeans Onboarding Quiz Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-category">Mobile-First Experience</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Jackie Jeans Onboarding</h3>
+                        <p class="project-summary">
+                            A premium, mobile-first fit quiz and voice-enabled AI onboarding assistant simplifying brand integration.
+                        </p>
+                        <div class="project-tags">
+                            <span>React.js</span>
+                            <span>Tailwind CSS</span>
+                            <span>Web Speech API</span>
+                            <span>Speech Recognition</span>
+                        </div>
+                        <div class="project-ctas">
+                            <button class="btn-project-detail btn btn-sm btn-outline" data-project="jackiejeans">View Details</button>
+                            <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-link" aria-label="GitHub Repository"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: IndusMind AI -->
+                <article class="project-card card reveal-item" id="project-indusmind">
+                    <div class="project-media">
+                        <img src="assets/indusmind_ai_mockup.png" alt="IndusMind AI Industrial Dashboard Mockup" class="project-img">
+                        <div class="project-overlay">
+                            <span class="project-category">Enterprise AI Platform</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">IndusMind AI Platform</h3>
+                        <p class="project-summary">
+                            A unified industrial intelligence platform with document OCR, RAG citation search, and interactive knowledge graphs.
+                        </p>
+                        <div class="project-tags">
+                            <span>React.js</span>
+                            <span>Vite</span>
+                            <span>D3.js</span>
+                            <span>NLP / RAG</span>
+                        </div>
+                        <div class="project-ctas">
+                            <button class="btn-project-detail btn btn-sm btn-outline" data-project="indusmind">View Details</button>
+                            <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-link" aria-label="GitHub Repository"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details Modal -->
+    <div class="modal-overlay" id="project-detail-modal">
+        <div class="modal-content card">
+            <button class="modal-close-btn" id="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body" id="modal-project-content">
+                <!-- Content injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Accomplishments</span>
+                <h2 class="section-title">Professional Certifications</h2>
+            </div>
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card card reveal-item">
+                    <div class="cert-icon-wrapper"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Introduction to Python</h3>
+                    <p class="cert-issuer">University of Pennsylvania • Coursera</p>
+                    <div class="cert-badge-bottom">Credential Verified</div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card card reveal-item">
+                    <div class="cert-icon-wrapper"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Programming Essentials</h3>
+                    <p class="cert-issuer">Rice University • Coursera</p>
+                    <div class="cert-badge-bottom">Credential Verified</div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card card reveal-item">
+                    <div class="cert-icon-wrapper"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Artificial Intelligence Foundations</h3>
+                    <p class="cert-issuer">IBM SkillsBuild</p>
+                    <div class="cert-badge-bottom">Credential Verified</div>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-card card reveal-item">
+                    <div class="cert-icon-wrapper"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Data Analytics Job Simulation</h3>
+                    <p class="cert-issuer">Deloitte</p>
+                    <div class="cert-badge-bottom">Simulation Completed</div>
+                </div>
+                <!-- Cert 5 -->
+                <div class="cert-card card reveal-item">
+                    <div class="cert-icon-wrapper"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Introduction to Java</h3>
+                    <p class="cert-issuer">HP Life</p>
+                    <div class="cert-badge-bottom">Credential Verified</div>
+                </div>
+                <!-- Cert 6 -->
+                <div class="cert-card card reveal-item">
+                    <div class="cert-icon-wrapper"><i class="fas fa-award"></i></div>
+                    <h3 class="cert-title">Data Science and Analytics</h3>
+                    <p class="cert-issuer">Coursera</p>
+                    <div class="cert-badge-bottom">Credential Verified</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Achievements -->
+    <section class="leadership-section" id="leadership">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Extracurriculars</span>
+                <h2 class="section-title">Leadership & Achievements</h2>
+            </div>
+            
+            <div class="leadership-achievements-container">
+                <div class="leadership-column">
+                    <h3 class="sub-column-title"><i class="fas fa-users-cog"></i> Roles of Responsibility</h3>
+                    <div class="lead-item-card card reveal-item">
+                        <div class="lead-header">
+                            <span class="lead-logo"><i class="fas fa-bullhorn"></i></span>
+                            <div class="lead-titles">
+                                <h4 class="lead-title">Student Ambassador</h4>
+                                <p class="lead-org">LetsUpgrade EdTech Pvt. Ltd.</p>
+                            </div>
+                        </div>
+                        <p class="lead-desc">
+                            Spearheaded programming literacy workshops and tech courses across campus networks, helping register multiple student cohorts and driving digital skill inclusion.
+                        </p>
+                    </div>
+                    <div class="lead-item-card card reveal-item">
+                        <div class="lead-header">
+                            <span class="lead-logo"><i class="fas fa-hand-holding-heart"></i></span>
+                            <div class="lead-titles">
+                                <h4 class="lead-title">Blood Donation Volunteer</h4>
+                                <p class="lead-org">Red Cross & Campus Health Campaigns</p>
+                            </div>
+                        </div>
+                        <p class="lead-desc">
+                            Supported campus blood donation mobilization, coordinated donor registrations, and educated cohorts on blood drives. This inspired the creation of the Blood Donor Web App.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="achievements-column">
+                    <h3 class="sub-column-title"><i class="fas fa-trophy"></i> Key Accomplishments</h3>
+                    <div class="achievement-item-card card reveal-item">
+                        <div class="achievement-header">
+                            <span class="ach-logo"><i class="fas fa-medal"></i></span>
+                            <div class="ach-titles">
+                                <h4 class="ach-title">VBYLD 2026 Championship</h4>
+                                <p class="ach-org">Ministry of Youth Affairs & Sports (Govt of India)</p>
+                            </div>
+                        </div>
+                        <p class="ach-desc">
+                            Successfully advanced through multiple stages to qualify for the Stage III State-Level Championship.
+                        </p>
+                    </div>
+                    <div class="achievement-item-card card reveal-item">
+                        <div class="achievement-header">
+                            <span class="ach-logo"><i class="fas fa-gamepad"></i></span>
+                            <div class="ach-titles">
+                                <h4 class="ach-title">eSports Tournament Winner</h4>
+                                <p class="ach-org">Inter-College Championship</p>
+                            </div>
+                        </div>
+                        <p class="ach-desc">
+                            Earned top ranks in competitive formats, proving fast-paced decision making, cross-team coordination, and tactical strategic thinking.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beyond Tech / Interests -->
+    <section class="interests-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tagline">Interests</span>
+                <h2 class="section-title">Beyond Technology</h2>
+            </div>
+            <div class="interests-grid">
+                <div class="interest-box card reveal-item">
+                    <div class="interest-icon"><i class="fas fa-bicycle"></i></div>
+                    <h3 class="interest-title">Cycling</h3>
+                    <p class="interest-desc">Promotes focus, stamina, and physical endurance.</p>
+                </div>
+                <div class="interest-box card reveal-item">
+                    <div class="interest-icon"><i class="fas fa-swimmer"></i></div>
+                    <h3 class="interest-title">Swimming</h3>
+                    <p class="interest-desc">A perfect way to refresh, build strength, and stay active.</p>
+                </div>
+                <div class="interest-box card reveal-item">
+                    <div class="interest-icon"><i class="fas fa-music"></i></div>
+                    <h3 class="interest-title">Music</h3>
+                    <p class="interest-desc">Listening and relaxing; keeps me creative and calm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-card card reveal-item">
+                <div class="contact-grid">
+                    <div class="contact-info-panel">
+                        <h2 class="contact-heading">Let's build <br>something great.</h2>
+                        <p class="contact-lead">
+                            Have an interesting project, job opportunity, or just want to connect? Hit the form, email me directly, or reach out on social media.
+                        </p>
+                        <div class="contact-details-list">
+                            <div class="details-item">
+                                <span class="details-icon"><i class="fas fa-envelope"></i></span>
+                                <div class="details-text">
+                                    <span>Email Address</span>
+                                    <a href="mailto:shaik.rajiummar.shaik@gmail.com">shaik.rajiummar.shaik@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="details-item">
+                                <span class="details-icon"><i class="fas fa-phone-alt"></i></span>
+                                <div class="details-text">
+                                    <span>Phone Number</span>
+                                    <a href="tel:+919398666507">+91 9398666507</a>
+                                </div>
+                            </div>
+                            <div class="details-item">
+                                <span class="details-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <div class="details-text">
+                                    <span>Location</span>
+                                    <span>Hyderabad, Telangana, India</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-panel">
+                        <form id="contact-me-form" novalidate>
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Full Name</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="John Doe" required>
+                                <span class="error-msg" id="name-error">Please enter your name</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Email Address</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="john@example.com" required>
+                                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message" class="form-label">Message</label>
+                                <textarea id="form-message" class="form-input form-textarea" placeholder="How can I help you?" required></textarea>
+                                <span class="error-msg" id="message-error">Please write a message</span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit" id="submit-form-btn">
+                                <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="success-modal">
+        <div class="modal-content card success-card">
+            <div class="success-icon-box"><i class="fas fa-check-circle"></i></div>
+            <h2>Message Sent Successfully!</h2>
+            <p>Thank you for reaching out, Shaik Rajiummar will get back to you shortly.</p>
+            <button class="btn btn-primary" id="success-close-btn">Close</button>
+        </div>
+    </div>
+
+    <!-- Scroll Progress and Top Button -->
+    <button id="topBtn" class="back-to-top" aria-label="Back to Top">
+        <svg class="progress-ring" width="50" height="50">
+            <circle class="progress-ring-circle-bg" stroke="#e2e8f0" stroke-width="3" fill="transparent" r="20" cx="25" cy="25"/>
+            <circle class="progress-ring-circle" stroke="#38BDF8" stroke-width="4" fill="transparent" r="20" cx="25" cy="25"/>
+        </svg>
+        <span class="arrow-up"><i class="fas fa-arrow-up"></i></span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">SR<span>.</span></div>
+            <p class="footer-copyright">&copy; 2026 Shaik Rajiummar. Designed with premium modern aesthetics.</p>
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/shaik-rajiummar/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/shaikrajiummar" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="mailto:shaik.rajiummar.shaik@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script file -->
+    <script src="script.js"></script>
+</body>
+</html>
