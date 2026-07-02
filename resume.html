@@ -86,6 +86,18 @@
             transform: translateY(-1px);
         }
 
+        .btn-ats {
+            background-color: #475569;
+            color: #ffffff;
+            border: none;
+            box-shadow: 0 4px 12px rgba(71, 85, 105, 0.2);
+        }
+
+        .btn-ats:hover {
+            background-color: #334155;
+            transform: translateY(-1px);
+        }
+
         /* Resume Content Styling */
         header {
             text-align: center;
@@ -398,9 +410,14 @@
         <a href="index.html" class="toolbar-btn btn-back">
             <i class="fas fa-arrow-left"></i> Back to Portfolio
         </a>
-        <button onclick="window.print()" class="toolbar-btn btn-print">
-            <i class="fas fa-file-pdf"></i> Save / Print PDF
-        </button>
+        <div style="display: flex; gap: 10px;">
+            <a href="shaik_rajiummar_resume.md" download class="toolbar-btn btn-ats">
+                <i class="fas fa-file-alt"></i> Get ATS Resume
+            </a>
+            <button onclick="window.print()" class="toolbar-btn btn-print">
+                <i class="fas fa-file-pdf"></i> Save / Print PDF
+            </button>
+        </div>
     </div>
 
     <!-- Printable Resume Paper -->
