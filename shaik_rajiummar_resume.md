@@ -2,6 +2,7 @@
 **Software Engineer | Full Stack Developer**  
 Hyderabad, Telangana, India | Phone: +91 9398666507 | Email: shaik.rajiummar.shaik@gmail.com  
 LinkedIn: linkedin.com/in/shaik-rajiummar | GitHub: github.com/shaikrajiummar  
+Portfolio: shaikrajiummar.github.io/Portfolio/ | Online CV: shaikrajiummar.github.io/Portfolio/resume.html  
 
 ---
 
