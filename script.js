@@ -186,6 +186,21 @@ const projectsData = {
         ],
         github: "https://github.com/shaikrajiummar",
         live: "http://localhost:5173/"
+    },
+    leaddesk: {
+        title: "LeadDesk Mini",
+        category: "Full Stack Application",
+        image: "assets/leaddesk_mockup.jpg",
+        description: "A premium, real-time full-stack lead capture application featuring a public-facing project inquiry landing page with robust inline validation and a real-time admin portal to manage and transition submitted leads.",
+        tags: ["Node.js", "Express.js", "SQLite / Postgres", "Server-Sent Events", "JWT", "httpOnly Cookie"],
+        features: [
+            "Real-time Live Syncing: Built using Server-Sent Events (SSE). Submitting a new lead instantly pushes the lead to the admin dashboard (with a clean row-glow entrance animation and updating stats counters) without requiring any manual refreshes.",
+            "Form Validation: Provides instant inline visual validation feedback on fields (Name, Email, Budget).",
+            "JWT + HTTP-Only Cookie: Secure admin dashboard authentication using JWT stored in httpOnly, SameSite=Strict cookies to protect against XSS and CSRF.",
+            "Multi-Database Adapter: Single-file database adapter supporting both SQLite for local development and PostgreSQL for production deployments."
+        ],
+        github: "https://github.com/shaikrajiummar/LeadDesk-Mini",
+        live: "http://localhost:3000/"
     }
 };
 

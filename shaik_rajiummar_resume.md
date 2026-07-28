@@ -67,6 +67,13 @@ Madhu Vidyalayam | *Graduation: 2020*
   * Constructed an interactive network graph using D3.js to map and visualize factory databases and incident logs.
   * Developed predictive telemetry checkers to evaluate sensor thresholds and forecast maintenance windows.
 
+### **LeadDesk Mini** (Node.js, Express.js, SQLite / PostgreSQL, Server-Sent Events)
+* **Description:** Developed a real-time full-stack lead capture application featuring a public-facing inquiry page and a live admin dashboard.
+* **Key Contributions:**
+  * Implemented real-time dashboard updates utilizing Server-Sent Events (SSE) to instantly synchronize lead submissions and stats.
+  * Secured admin dashboard authorization using JSON Web Tokens (JWT) stored in secure, HTTP-only cookies to mitigate XSS and CSRF risks.
+  * Designed a unified database adapter supporting SQLite for local development and production PostgreSQL databases.
+
 ## CERTIFICATIONS
 * **Introduction to Python** – University of Pennsylvania | Coursera (Credential Verified)
 * **Programming Essentials** – Rice University | Coursera (Credential Verified)
