@@ -74,6 +74,13 @@ Madhu Vidyalayam | *Graduation: 2020*
   * Secured admin dashboard authorization using JSON Web Tokens (JWT) stored in secure, HTTP-only cookies to mitigate XSS and CSRF risks.
   * Designed a unified database adapter supporting SQLite for local development and production PostgreSQL databases.
 
+### **Osteoporosis Risk Prediction System** (Python, Flask, PyTorch / TensorFlow, Grad-CAM)
+* **Description:** Developed a multimodal AI-powered medical health platform combining tabular clinical metadata and X-ray imaging inputs to assess osteoporosis risk.
+* **Key Contributions:**
+  * Created a multimodal deep learning classifier utilizing clinical patient statistics and hip/spine X-ray scans.
+  * Integrated PyTorch convolutional layers with Grad-CAM visualization heatmaps to overlay bone mineral density loss areas directly on X-ray outputs.
+  * Programmed secure, clinical-facing portals validating medical license numbers and rendering patient distribution dashboards.
+
 ## CERTIFICATIONS
 * **Introduction to Python** – University of Pennsylvania | Coursera (Credential Verified)
 * **Programming Essentials** – Rice University | Coursera (Credential Verified)

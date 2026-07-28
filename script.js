@@ -201,6 +201,21 @@ const projectsData = {
         ],
         github: "https://github.com/shaikrajiummar/LeadDesk-Mini",
         live: "http://localhost:3000/"
+    },
+    osteoporosis: {
+        title: "Osteoporosis Risk Prediction System",
+        category: "Final Year Project - AI Healthcare",
+        image: "assets/osteo_mockup.jpg",
+        description: "A progressive multimodal AI-powered health portal that combines patient metadata and X-ray imaging inputs to predict osteoporosis risk levels, visualize bone density deterioration using Grad-CAM heatmaps, and generate doctor/patient diagnostics.",
+        tags: ["Python (Flask)", "PyTorch / TF", "Grad-CAM", "Multimodal AI", "ReportLab PDF", "HIPAA-Compliant Auth"],
+        features: [
+            "Multimodal AI Classifier: Combines clinical tabular metadata and hip/spine X-ray images to output an integrated risk score.",
+            "Grad-CAM Heatmaps: Integrates PyTorch convolutional layers to overlay active attention heatmaps on X-rays, visually explaining AI diagnosis to physicians.",
+            "Doctor & Patient Portals: Features dedicated clinical portals (doctor validation via license numbers, patient summary analytics charts) and patient portals (personal health tracks, meal/exercise planners, AI chat guides).",
+            "Auto PDF Diagnostics: Generates detailed patient diagnostic reports containing metadata scores, scans, and personalized recipes automatically compiled via ReportLab."
+        ],
+        github: "https://github.com/shaikrajiummar/final-year-project",
+        live: "#"
     }
 };
 
